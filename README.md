@@ -1,3 +1,5 @@
 # Weather Forecaster
 ***
-our model not supporting lstm:RRNA (Recurrent neural network)
+## TODO
+
+* FİX lstm:RRNA
