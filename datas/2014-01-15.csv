@@ -1,0 +1,36 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:50 AM,32 °F,30 °F,93 °%,SW,2 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+1,1:50 AM,30 °F,30 °F,100 °%,WSW,6 °mph,0 °mph,29.30 °in,0.0 °in,Fair
+2,2:50 AM,30 °F,30 °F,100 °%,VAR,1 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+3,3:50 AM,27 °F,27 °F,100 °%,CALM,0 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+4,4:50 AM,28 °F,28 °F,100 °%,CALM,0 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+5,5:50 AM,28 °F,28 °F,100 °%,VAR,1 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+6,6:50 AM,27 °F,25 °F,93 °%,VAR,1 °mph,0 °mph,29.33 °in,0.0 °in,Fair
+7,7:50 AM,27 °F,25 °F,93 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+8,8:50 AM,27 °F,25 °F,93 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+9,9:19 AM,28 °F,27 °F,93 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+10,9:50 AM,32 °F,0 °F,100 °%,ENE,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+11,10:50 AM,39 °F,34 °F,81 °%,SW,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+12,11:50 AM,48 °F,36 °F,62 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+13,12:50 PM,48 °F,36 °F,62 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Partly Cloudy
+14,1:50 PM,57 °F,37 °F,48 °%,ENE,9 °mph,0 °mph,29.30 °in,0.0 °in,Partly Cloudy
+15,2:50 PM,59 °F,37 °F,45 °%,E,12 °mph,0 °mph,29.27 °in,0.0 °in,Partly Cloudy
+16,3:50 PM,59 °F,36 °F,42 °%,ENE,12 °mph,0 °mph,29.27 °in,0.0 °in,Partly Cloudy
+17,4:50 PM,57 °F,37 °F,48 °%,ENE,12 °mph,0 °mph,29.27 °in,0.0 °in,Partly Cloudy
+18,5:50 PM,54 °F,36 °F,51 °%,ENE,7 °mph,0 °mph,29.27 °in,0.0 °in,Partly Cloudy
+19,6:50 PM,50 °F,36 °F,58 °%,E,5 °mph,0 °mph,29.30 °in,0.0 °in,Partly Cloudy
+20,7:50 PM,50 °F,37 °F,62 °%,E,5 °mph,0 °mph,29.30 °in,0.0 °in,Fair
+21,8:50 PM,45 °F,36 °F,71 °%,ENE,5 °mph,0 °mph,29.30 °in,0.0 °in,Fair
+22,9:50 PM,45 °F,36 °F,71 °%,SE,5 °mph,0 °mph,29.30 °in,0.0 °in,Fair
+23,10:50 PM,41 °F,36 °F,81 °%,SE,5 °mph,0 °mph,29.30 °in,0.0 °in,Fair
+24,11:50 PM,43 °F,36 °F,76 °%,ESE,5 °mph,0 °mph,29.27 °in,0.0 °in,Fair
+25,,,,,,,,,,
+26,,,,,,,,,,
+27,,,,,,,,,,
+28,,,,,,,,,,
+29,,,,,,,,,,
+30,,,,,,,,,,
+31,,,,,,,,,,
+32,,,,,,,,,,
+33,,,,,,,,,,
+34,,,,,,,,,,

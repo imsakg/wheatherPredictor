@@ -1,0 +1,35 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:50 AM,48 °F,37 °F,66 °%,E,14 °mph,0 °mph,29.13 °in,0.0 °in,Fair
+1,1:50 AM,48 °F,37 °F,66 °%,E,16 °mph,0 °mph,29.13 °in,0.0 °in,Fair
+2,2:50 AM,48 °F,37 °F,66 °%,E,21 °mph,0 °mph,29.10 °in,0.0 °in,Fair / Windy
+3,3:50 AM,48 °F,37 °F,66 °%,E,22 °mph,0 °mph,29.10 °in,0.0 °in,Mostly Cloudy / Windy
+4,4:50 AM,48 °F,37 °F,66 °%,E,21 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy / Windy
+5,5:50 AM,48 °F,37 °F,66 °%,E,24 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy / Windy
+6,6:50 AM,48 °F,37 °F,66 °%,E,23 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy / Windy
+7,7:50 AM,48 °F,37 °F,66 °%,E,25 °mph,38 °mph,29.04 °in,0.0 °in,Mostly Cloudy / Windy
+8,8:50 AM,50 °F,36 °F,58 °%,E,29 °mph,40 °mph,29.04 °in,0.0 °in,Mostly Cloudy / Windy
+9,9:50 AM,50 °F,37 °F,62 °%,ENE,25 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy / Windy
+10,10:50 AM,54 °F,37 °F,54 °%,ENE,17 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+11,11:50 AM,57 °F,37 °F,48 °%,E,17 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+12,12:50 PM,57 °F,37 °F,48 °%,E,17 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+13,1:50 PM,63 °F,37 °F,39 °%,SE,14 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+14,2:50 PM,63 °F,36 °F,37 °%,SSE,12 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+15,3:50 PM,64 °F,36 °F,34 °%,E,13 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+16,4:50 PM,59 °F,39 °F,48 °%,ENE,12 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+17,5:50 PM,59 °F,37 °F,45 °%,NE,10 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+18,6:50 PM,57 °F,39 °F,51 °%,ENE,8 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+19,7:50 PM,57 °F,39 °F,51 °%,ENE,10 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+20,8:50 PM,57 °F,39 °F,51 °%,E,12 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+21,9:50 PM,59 °F,39 °F,48 °%,NE,7 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+22,10:50 PM,61 °F,37 °F,42 °%,E,7 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+23,11:50 PM,61 °F,39 °F,45 °%,E,7 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+24,,,,,,,,,,
+25,,,,,,,,,,
+26,,,,,,,,,,
+27,,,,,,,,,,
+28,,,,,,,,,,
+29,,,,,,,,,,
+30,,,,,,,,,,
+31,,,,,,,,,,
+32,,,,,,,,,,
+33,,,,,,,,,,

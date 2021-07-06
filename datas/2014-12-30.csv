@@ -1,0 +1,61 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:20 AM,36 °F,34 °F,93 °%,N,6 °mph,0 °mph,29.16 °in,0.0 °in,Mostly Cloudy
+1,1:50 AM,36 °F,34 °F,93 °%,N,7 °mph,0 °mph,29.16 °in,0.0 °in,Mostly Cloudy
+2,2:20 AM,36 °F,32 °F,87 °%,N,5 °mph,0 °mph,29.16 °in,0.0 °in,Rain and Snow
+3,2:50 AM,36 °F,32 °F,87 °%,N,3 °mph,0 °mph,29.16 °in,0.0 °in,Rain and Snow
+4,3:20 AM,34 °F,32 °F,93 °%,NW,5 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+5,3:50 AM,34 °F,32 °F,93 °%,NNW,2 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+6,4:20 AM,34 °F,32 °F,93 °%,WNW,3 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+7,4:50 AM,32 °F,32 °F,100 °%,W,3 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+8,5:20 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+9,5:50 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+10,6:20 AM,32 °F,32 °F,100 °%,SSE,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+11,6:50 AM,32 °F,32 °F,100 °%,S,3 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+12,7:20 AM,32 °F,32 °F,100 °%,VAR,1 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+13,7:32 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+14,7:50 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+15,8:20 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+16,8:50 AM,32 °F,32 °F,100 °%,VAR,1 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+17,9:20 AM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.24 °in,0.0 °in,Snow Shower
+18,9:50 AM,34 °F,32 °F,93 °%,NNW,3 °mph,0 °mph,29.24 °in,0.0 °in,Snow Shower
+19,10:20 AM,34 °F,32 °F,93 °%,VAR,1 °mph,0 °mph,29.24 °in,0.0 °in,Snow Shower
+20,10:50 AM,32 °F,32 °F,100 °%,S,3 °mph,0 °mph,29.24 °in,0.0 °in,Snow Shower
+21,11:20 AM,32 °F,32 °F,100 °%,S,2 °mph,0 °mph,29.24 °in,0.0 °in,Snow Shower
+22,11:50 AM,34 °F,32 °F,93 °%,SW,3 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+23,12:20 PM,34 °F,34 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+24,12:50 PM,34 °F,32 °F,93 °%,SW,5 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+25,1:20 PM,34 °F,32 °F,93 °%,NNW,3 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+26,1:50 PM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+27,2:20 PM,34 °F,32 °F,93 °%,NNW,6 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+28,2:31 PM,34 °F,32 °F,93 °%,N,5 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+29,2:50 PM,34 °F,32 °F,93 °%,N,5 °mph,0 °mph,29.16 °in,0.0 °in,Snow Shower
+30,3:20 PM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+31,3:50 PM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+32,4:20 PM,32 °F,32 °F,100 °%,SW,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+33,4:50 PM,32 °F,32 °F,100 °%,SW,1 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+34,5:20 PM,32 °F,32 °F,100 °%,SSW,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+35,5:50 PM,32 °F,32 °F,100 °%,W,3 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+36,6:20 PM,32 °F,32 °F,100 °%,WSW,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+37,6:50 PM,32 °F,32 °F,100 °%,W,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+38,7:20 PM,32 °F,32 °F,100 °%,WSW,2 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+39,7:50 PM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+40,8:20 PM,32 °F,32 °F,100 °%,W,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+41,8:50 PM,32 °F,32 °F,100 °%,WNW,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+42,9:20 PM,32 °F,32 °F,100 °%,NW,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+43,9:50 PM,32 °F,32 °F,100 °%,NW,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+44,10:20 PM,32 °F,32 °F,100 °%,NW,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+45,10:50 PM,32 °F,32 °F,100 °%,VAR,1 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+46,11:20 PM,32 °F,32 °F,100 °%,SSE,1 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+47,11:50 PM,32 °F,32 °F,100 °%,CALM,0 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+48,12:20 AM,32 °F,32 °F,100 °%,CALM,0 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+49,12:50 AM,32 °F,32 °F,100 °%,CALM,0 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+50,,,,,,,,,,
+51,,,,,,,,,,
+52,,,,,,,,,,
+53,,,,,,,,,,
+54,,,,,,,,,,
+55,,,,,,,,,,
+56,,,,,,,,,,
+57,,,,,,,,,,
+58,,,,,,,,,,
+59,,,,,,,,,,

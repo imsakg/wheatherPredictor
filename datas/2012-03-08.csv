@@ -1,0 +1,35 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:50 AM,30 °F,27 °F,86 °%,CALM,0 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+1,1:50 AM,30 °F,27 °F,86 °%,SSW,2 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+2,2:50 AM,27 °F,23 °F,86 °%,W,3 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+3,3:50 AM,28 °F,27 °F,93 °%,CALM,0 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+4,4:50 AM,28 °F,25 °F,86 °%,CALM,0 °mph,0 °mph,29.42 °in,0.0 °in,Fair
+5,5:50 AM,27 °F,25 °F,93 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fair
+6,6:50 AM,27 °F,23 °F,86 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fair
+7,7:50 AM,25 °F,23 °F,93 °%,NNW,3 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+8,8:50 AM,30 °F,27 °F,86 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fair
+9,9:50 AM,37 °F,27 °F,65 °%,NE,1 °mph,0 °mph,29.44 °in,0.0 °in,Fair
+10,10:50 AM,43 °F,28 °F,57 °%,SE,3 °mph,0 °mph,29.42 °in,0.0 °in,Fair
+11,11:50 AM,46 °F,30 °F,53 °%,SE,5 °mph,0 °mph,29.42 °in,0.0 °in,Partly Cloudy
+12,12:50 PM,50 °F,30 °F,47 °%,SW,3 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+13,1:50 PM,52 °F,30 °F,44 °%,SW,3 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+14,2:50 PM,52 °F,30 °F,44 °%,SSW,3 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+15,3:50 PM,52 °F,30 °F,44 °%,W,5 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+16,4:50 PM,50 °F,30 °F,47 °%,WNW,5 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+17,5:50 PM,48 °F,34 °F,57 °%,WSW,7 °mph,0 °mph,29.39 °in,0.0 °in,Mostly Cloudy
+18,6:50 PM,46 °F,36 °F,66 °%,WSW,6 °mph,0 °mph,29.42 °in,0.0 °in,Mostly Cloudy
+19,7:50 PM,45 °F,37 °F,76 °%,W,7 °mph,0 °mph,29.42 °in,0.0 °in,Mostly Cloudy
+20,8:50 PM,43 °F,39 °F,87 °%,W,5 °mph,0 °mph,29.44 °in,0.0 °in,Mostly Cloudy
+21,9:50 PM,41 °F,39 °F,93 °%,VAR,2 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+22,10:50 PM,41 °F,39 °F,93 °%,S,3 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+23,11:50 PM,41 °F,39 °F,93 °%,VAR,1 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+24,,,,,,,,,,
+25,,,,,,,,,,
+26,,,,,,,,,,
+27,,,,,,,,,,
+28,,,,,,,,,,
+29,,,,,,,,,,
+30,,,,,,,,,,
+31,,,,,,,,,,
+32,,,,,,,,,,
+33,,,,,,,,,,

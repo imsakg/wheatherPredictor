@@ -1,0 +1,70 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:20 AM,28 °F,25 °F,86 °%,NNE,6 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+1,1:50 AM,28 °F,23 °F,80 °%,N,9 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+2,2:20 AM,28 °F,23 °F,80 °%,N,9 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+3,2:50 AM,28 °F,23 °F,80 °%,NNE,8 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+4,3:20 AM,28 °F,23 °F,80 °%,NNW,12 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+5,3:50 AM,28 °F,23 °F,80 °%,NNW,7 °mph,0 °mph,29.50 °in,0.0 °in,Mostly Cloudy
+6,4:20 AM,28 °F,23 °F,80 °%,NW,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+7,4:50 AM,28 °F,21 °F,74 °%,W,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+8,5:20 AM,27 °F,25 °F,93 °%,S,5 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+9,5:50 AM,27 °F,23 °F,86 °%,S,5 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+10,6:20 AM,27 °F,23 °F,86 °%,WSW,9 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+11,6:50 AM,27 °F,25 °F,93 °%,W,5 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+12,7:20 AM,27 °F,25 °F,93 °%,W,5 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+13,7:50 AM,27 °F,25 °F,93 °%,W,8 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+14,8:20 AM,27 °F,23 °F,86 °%,NNW,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+15,8:28 AM,28 °F,21 °F,74 °%,NW,6 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+16,8:50 AM,28 °F,23 °F,80 °%,WNW,6 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+17,9:20 AM,30 °F,23 °F,75 °%,WNW,6 °mph,0 °mph,29.47 °in,0.0 °in,Mostly Cloudy
+18,9:36 AM,30 °F,23 °F,75 °%,N,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+19,9:50 AM,30 °F,23 °F,75 °%,NNW,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+20,10:16 AM,30 °F,23 °F,75 °%,NNW,7 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+21,10:20 AM,28 °F,25 °F,86 °%,WNW,10 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+22,10:50 AM,28 °F,27 °F,93 °%,W,8 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+23,11:08 AM,28 °F,25 °F,86 °%,W,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+24,11:20 AM,32 °F,23 °F,69 °%,N,10 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+25,11:50 AM,32 °F,25 °F,75 °%,NNW,14 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+26,12:20 PM,32 °F,25 °F,75 °%,NNW,8 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+27,12:36 PM,28 °F,27 °F,93 °%,NNW,9 °mph,0 °mph,29.47 °in,0.0 °in,Heavy Snow Shower
+28,12:50 PM,27 °F,25 °F,93 °%,NW,9 °mph,0 °mph,29.47 °in,0.0 °in,Heavy Snow Shower
+29,1:01 PM,28 °F,27 °F,93 °%,WNW,6 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+30,1:20 PM,28 °F,27 °F,93 °%,NW,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+31,1:50 PM,30 °F,27 °F,86 °%,NW,12 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+32,2:20 PM,32 °F,25 °F,75 °%,NNW,13 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+33,2:33 PM,30 °F,27 °F,86 °%,N,8 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+34,2:50 PM,30 °F,27 °F,86 °%,WNW,7 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+35,3:20 PM,32 °F,25 °F,75 °%,NW,12 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+36,3:50 PM,32 °F,25 °F,75 °%,NNW,10 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+37,4:20 PM,30 °F,27 °F,86 °%,NNW,10 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+38,5:20 PM,30 °F,27 °F,86 °%,NNW,10 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+39,5:50 PM,30 °F,25 °F,80 °%,NW,9 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+40,6:20 PM,30 °F,27 °F,86 °%,W,9 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+41,6:41 PM,30 °F,27 °F,86 °%,WSW,7 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+42,6:50 PM,28 °F,27 °F,93 °%,NW,8 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+43,7:11 PM,28 °F,28 °F,100 °%,N,9 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+44,7:20 PM,28 °F,28 °F,100 °%,NNW,8 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+45,7:50 PM,28 °F,28 °F,100 °%,NW,12 °mph,0 °mph,29.44 °in,0.0 °in,Heavy Snow Shower
+46,8:05 PM,28 °F,28 °F,100 °%,W,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+47,8:20 PM,28 °F,28 °F,100 °%,SW,5 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+48,8:50 PM,28 °F,27 °F,93 °%,N,6 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+49,9:07 PM,28 °F,27 °F,93 °%,N,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+50,9:20 PM,28 °F,25 °F,86 °%,N,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+51,9:50 PM,30 °F,25 °F,80 °%,NNW,7 °mph,0 °mph,29.47 °in,0.0 °in,Light Snow Shower
+52,10:20 PM,30 °F,27 °F,86 °%,NNW,9 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+53,10:37 PM,30 °F,27 °F,86 °%,NNW,10 °mph,0 °mph,29.47 °in,0.0 °in,Snow Shower
+54,10:50 PM,28 °F,28 °F,100 °%,NNW,9 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+55,11:20 PM,28 °F,27 °F,93 °%,NNW,9 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+56,11:50 PM,28 °F,25 °F,86 °%,NNW,9 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+57,12:20 AM,30 °F,27 °F,86 °%,NW,12 °mph,0 °mph,29.44 °in,0.0 °in,Light Snow Shower
+58,12:50 AM,28 °F,28 °F,100 °%,WNW,8 °mph,0 °mph,29.44 °in,0.0 °in,Snow Shower
+59,,,,,,,,,,
+60,,,,,,,,,,
+61,,,,,,,,,,
+62,,,,,,,,,,
+63,,,,,,,,,,
+64,,,,,,,,,,
+65,,,,,,,,,,
+66,,,,,,,,,,
+67,,,,,,,,,,
+68,,,,,,,,,,

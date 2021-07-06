@@ -1,0 +1,22 @@
+,Temperature (° F),Actual,Historic Avg.,Record,Polygon
+,Precipitation (Inches),Actual,Historic Avg.,Record,Polygon
+,Dew Point (° F),Actual,Historic Avg.,Record,Polygon
+,Wind (MPH),Actual,Historic Avg.,Record,Polygon
+,Sea Level Pressure (Hg),Actual,Historic Avg.,Record,Polygon
+,Astronomy,Day Length,Rise,Set,Polygon
+0,High Temp,88,84.2,--,
+1,Low Temp,55,58.7,--,
+2,Day Average Temp,72.94,72,-,
+3,Precipitation (past 24 hours from 21:20:00),0.00,--,-,
+4,Dew Point,59.33,-,-,
+5,High,64,-,-,
+6,Low,54,-,-,
+7,Average,59.33,-,-,
+8,Max Wind Speed,14,-,-,
+9,Visibility,6,-,-,
+10,Sea Level Pressure,29.33,-,-,
+11,Actual Time,13h 9m,6:28 AM,7:37 PM,
+12,Civil Twilight,,6:00 AM,8:05 PM,
+13,Nautical Twilight,,5:27 AM,8:39 PM,
+14,Astronomical Twilight,,4:52 AM,9:14 PM,
+15,Moon: waning gibbous,,8:39 PM,8:14 AM,

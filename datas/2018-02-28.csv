@@ -1,0 +1,60 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:20 AM,37 °F,37 °F,100 °%,N,2 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+1,12:50 AM,36 °F,36 °F,100 °%,VAR,2 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+2,1:20 AM,36 °F,36 °F,100 °%,VAR,1 °mph,0 °mph,29.01 °in,0.0 °in,Mostly Cloudy
+3,1:50 AM,34 °F,34 °F,100 °%,SSW,3 °mph,0 °mph,28.98 °in,0.0 °in,Mist
+4,2:20 AM,34 °F,34 °F,100 °%,WSW,3 °mph,0 °mph,28.98 °in,0.0 °in,Mist
+5,2:50 AM,34 °F,34 °F,100 °%,VAR,1 °mph,0 °mph,28.96 °in,0.0 °in,Mist
+6,3:20 AM,36 °F,36 °F,100 °%,NE,6 °mph,0 °mph,28.96 °in,0.0 °in,Mist
+7,3:50 AM,34 °F,34 °F,100 °%,VAR,2 °mph,0 °mph,28.93 °in,0.0 °in,Mist
+8,4:20 AM,37 °F,36 °F,93 °%,SE,5 °mph,0 °mph,28.90 °in,0.0 °in,Mist
+9,4:50 AM,43 °F,39 °F,87 °%,E,14 °mph,0 °mph,28.90 °in,0.0 °in,Mostly Cloudy
+10,5:20 AM,45 °F,39 °F,81 °%,E,14 °mph,0 °mph,28.87 °in,0.0 °in,Mostly Cloudy
+11,5:50 AM,45 °F,39 °F,81 °%,E,15 °mph,0 °mph,28.87 °in,0.0 °in,Mostly Cloudy
+12,6:20 AM,52 °F,39 °F,62 °%,SE,13 °mph,0 °mph,28.84 °in,0.0 °in,Mostly Cloudy
+13,6:50 AM,52 °F,39 °F,62 °%,ESE,16 °mph,0 °mph,28.84 °in,0.0 °in,Mostly Cloudy
+14,7:20 AM,48 °F,39 °F,71 °%,ESE,13 °mph,0 °mph,28.81 °in,0.0 °in,Mostly Cloudy
+15,7:50 AM,55 °F,37 °F,51 °%,SSE,15 °mph,0 °mph,28.81 °in,0.0 °in,Mostly Cloudy
+16,8:20 AM,55 °F,39 °F,54 °%,SSE,17 °mph,31 °mph,28.81 °in,0.0 °in,Mostly Cloudy
+17,8:50 AM,57 °F,39 °F,51 °%,SSE,15 °mph,26 °mph,28.78 °in,0.0 °in,Mostly Cloudy
+18,9:20 AM,57 °F,39 °F,51 °%,S,18 °mph,0 °mph,28.78 °in,0.0 °in,Mostly Cloudy
+19,9:50 AM,57 °F,39 °F,51 °%,S,21 °mph,0 °mph,28.78 °in,0.0 °in,Light Rain Shower / Windy
+20,10:20 AM,57 °F,39 °F,51 °%,S,10 °mph,22 °mph,28.81 °in,0.0 °in,Light Rain Shower
+21,10:50 AM,52 °F,45 °F,76 °%,SW,10 °mph,0 °mph,28.84 °in,0.0 °in,Light Rain Shower
+22,11:20 AM,50 °F,48 °F,94 °%,SW,7 °mph,0 °mph,28.84 °in,0.0 °in,Light Rain Shower
+23,11:50 AM,50 °F,48 °F,94 °%,SW,6 °mph,0 °mph,28.84 °in,0.0 °in,Light Rain Shower
+24,12:20 PM,48 °F,48 °F,100 °%,SW,6 °mph,0 °mph,28.87 °in,0.0 °in,Rain Shower
+25,12:50 PM,48 °F,48 °F,100 °%,W,6 °mph,0 °mph,28.87 °in,0.0 °in,Light Rain Shower
+26,1:20 PM,46 °F,45 °F,93 °%,W,6 °mph,0 °mph,28.87 °in,0.0 °in,Light Rain Shower
+27,1:50 PM,46 °F,46 °F,100 °%,W,6 °mph,0 °mph,28.87 °in,0.0 °in,Light Rain Shower
+28,2:20 PM,48 °F,46 °F,93 °%,VAR,2 °mph,0 °mph,28.87 °in,0.0 °in,Light Rain Shower
+29,2:50 PM,46 °F,41 °F,81 °%,WNW,17 °mph,0 °mph,28.90 °in,0.0 °in,Light Rain Shower
+30,3:20 PM,45 °F,37 °F,76 °%,WNW,17 °mph,0 °mph,28.93 °in,0.0 °in,Light Rain Shower
+31,3:50 PM,45 °F,37 °F,76 °%,W,23 °mph,0 °mph,28.93 °in,0.0 °in,Light Rain Shower / Windy
+32,4:20 PM,43 °F,36 °F,76 °%,WNW,17 °mph,0 °mph,28.98 °in,0.0 °in,Light Rain Shower
+33,4:50 PM,41 °F,36 °F,81 °%,W,20 °mph,0 °mph,28.98 °in,0.0 °in,Light Rain Shower
+34,5:20 PM,41 °F,36 °F,81 °%,W,14 °mph,0 °mph,29.01 °in,0.0 °in,Light Rain Shower
+35,5:50 PM,39 °F,36 °F,87 °%,W,16 °mph,0 °mph,29.04 °in,0.0 °in,Light Rain Shower
+36,6:20 PM,39 °F,36 °F,87 °%,W,14 °mph,0 °mph,29.07 °in,0.0 °in,Light Rain Shower
+37,6:50 PM,39 °F,34 °F,81 °%,WNW,13 °mph,0 °mph,29.07 °in,0.0 °in,Light Rain Shower
+38,7:20 PM,37 °F,34 °F,87 °%,WNW,10 °mph,0 °mph,29.10 °in,0.0 °in,Light Rain Shower
+39,7:50 PM,34 °F,34 °F,100 °%,NNW,13 °mph,0 °mph,29.13 °in,0.0 °in,Wintry Mix
+40,8:20 PM,34 °F,32 °F,93 °%,NNW,15 °mph,0 °mph,29.16 °in,0.0 °in,Mostly Cloudy
+41,8:50 PM,32 °F,32 °F,100 °%,NNW,15 °mph,0 °mph,29.16 °in,0.0 °in,Mostly Cloudy
+42,9:09 PM,32 °F,30 °F,93 °%,NNW,15 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+43,9:20 PM,32 °F,30 °F,93 °%,N,13 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+44,9:50 PM,32 °F,30 °F,93 °%,NNW,13 °mph,0 °mph,29.19 °in,0.0 °in,Mostly Cloudy
+45,10:20 PM,32 °F,30 °F,93 °%,N,10 °mph,0 °mph,29.19 °in,0.0 °in,Mostly Cloudy
+46,10:50 PM,32 °F,30 °F,93 °%,N,8 °mph,0 °mph,29.21 °in,0.0 °in,Mostly Cloudy
+47,11:20 PM,32 °F,30 °F,93 °%,NNW,7 °mph,0 °mph,29.21 °in,0.0 °in,Mostly Cloudy
+48,11:50 PM,32 °F,30 °F,93 °%,N,8 °mph,0 °mph,29.21 °in,0.0 °in,Mostly Cloudy
+49,,,,,,,,,,
+50,,,,,,,,,,
+51,,,,,,,,,,
+52,,,,,,,,,,
+53,,,,,,,,,,
+54,,,,,,,,,,
+55,,,,,,,,,,
+56,,,,,,,,,,
+57,,,,,,,,,,
+58,,,,,,,,,,

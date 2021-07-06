@@ -1,0 +1,36 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:50 AM,39 °F,34 °F,81 °%,WNW,2 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+1,1:50 AM,39 °F,34 °F,81 °%,NE,2 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+2,2:50 AM,37 °F,34 °F,87 °%,VAR,2 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+3,3:50 AM,37 °F,36 °F,93 °%,SSE,2 °mph,0 °mph,29.07 °in,0.0 °in,Fair
+4,4:50 AM,36 °F,32 °F,87 °%,NNE,2 °mph,0 °mph,29.07 °in,0.0 °in,Fair
+5,5:50 AM,34 °F,32 °F,93 °%,CALM,0 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+6,6:50 AM,34 °F,32 °F,93 °%,CALM,0 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+7,7:50 AM,39 °F,36 °F,87 °%,CALM,0 °mph,0 °mph,29.10 °in,0.0 °in,Fair
+8,8:50 AM,48 °F,39 °F,71 °%,VAR,2 °mph,0 °mph,29.07 °in,0.0 °in,Fair
+9,9:50 AM,54 °F,41 °F,62 °%,VAR,2 °mph,0 °mph,29.07 °in,0.0 °in,Fair
+10,10:50 AM,61 °F,41 °F,48 °%,VAR,5 °mph,0 °mph,29.07 °in,0.0 °in,Fair
+11,11:50 AM,68 °F,41 °F,37 °%,VAR,2 °mph,0 °mph,29.04 °in,0.0 °in,Partly Cloudy
+12,12:50 PM,70 °F,43 °F,38 °%,VAR,3 °mph,0 °mph,29.01 °in,0.0 °in,Partly Cloudy
+13,1:50 PM,73 °F,39 °F,29 °%,VAR,5 °mph,0 °mph,28.98 °in,0.0 °in,Partly Cloudy
+14,2:50 PM,73 °F,37 °F,27 °%,NW,7 °mph,0 °mph,28.96 °in,0.0 °in,Partly Cloudy
+15,3:50 PM,77 °F,32 °F,19 °%,VAR,3 °mph,0 °mph,28.93 °in,0.0 °in,Partly Cloudy
+16,4:50 PM,70 °F,41 °F,35 °%,NW,10 °mph,0 °mph,28.93 °in,0.0 °in,Mostly Cloudy
+17,5:50 PM,68 °F,39 °F,35 °%,WNW,10 °mph,0 °mph,28.96 °in,0.0 °in,Mostly Cloudy
+18,6:50 PM,64 °F,41 °F,42 °%,NNW,9 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+19,7:08 PM,63 °F,45 °F,52 °%,W,23 °mph,37 °mph,29.01 °in,0.0 °in,Mostly Cloudy / Windy
+20,7:50 PM,57 °F,46 °F,67 °%,W,16 °mph,0 °mph,29.04 °in,0.0 °in,Mostly Cloudy
+21,8:50 PM,54 °F,46 °F,77 °%,VAR,2 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+22,9:50 PM,54 °F,48 °F,82 °%,SE,5 °mph,0 °mph,29.07 °in,0.0 °in,Light Rain Shower
+23,10:50 PM,50 °F,48 °F,94 °%,N,5 °mph,0 °mph,29.07 °in,0.0 °in,Light Rain Shower
+24,11:50 PM,50 °F,48 °F,94 °%,SE,3 °mph,0 °mph,29.07 °in,0.0 °in,Light Rain Shower
+25,,,,,,,,,,
+26,,,,,,,,,,
+27,,,,,,,,,,
+28,,,,,,,,,,
+29,,,,,,,,,,
+30,,,,,,,,,,
+31,,,,,,,,,,
+32,,,,,,,,,,
+33,,,,,,,,,,
+34,,,,,,,,,,

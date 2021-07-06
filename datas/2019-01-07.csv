@@ -1,0 +1,61 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:20 AM,32 °F,30 °F,93 °%,WNW,6 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+1,12:50 AM,32 °F,30 °F,93 °%,VAR,1 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+2,1:20 AM,30 °F,30 °F,100 °%,SE,2 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+3,1:50 AM,30 °F,28 °F,93 °%,VAR,2 °mph,0 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+4,2:20 AM,32 °F,30 °F,93 °%,SW,2 °mph,0 °mph,29.10 °in,0.0 °in,Mostly Cloudy
+5,2:50 AM,32 °F,28 °F,87 °%,VAR,1 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+6,3:20 AM,32 °F,30 °F,93 °%,CALM,0 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+7,3:50 AM,30 °F,30 °F,100 °%,S,2 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+8,4:20 AM,32 °F,30 °F,93 °%,SW,3 °mph,0 °mph,29.10 °in,0.0 °in,Mostly Cloudy
+9,4:50 AM,32 °F,30 °F,93 °%,WSW,5 °mph,0 °mph,29.10 °in,0.0 °in,Mostly Cloudy
+10,5:11 AM,32 °F,30 °F,93 °%,WSW,6 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+11,5:20 AM,32 °F,30 °F,93 °%,WSW,6 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+12,5:50 AM,32 °F,30 °F,93 °%,W,6 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+13,6:20 AM,32 °F,32 °F,100 °%,W,5 °mph,0 °mph,29.10 °in,0.0 °in,Light Snow Shower
+14,6:50 AM,30 °F,30 °F,100 °%,WNW,5 °mph,0 °mph,29.13 °in,0.0 °in,Light Snow Shower
+15,7:20 AM,30 °F,30 °F,100 °%,SW,3 °mph,0 °mph,29.13 °in,0.0 °in,Light Snow Shower
+16,7:50 AM,30 °F,30 °F,100 °%,SW,2 °mph,0 °mph,29.13 °in,0.0 °in,Light Snow Shower
+17,8:20 AM,30 °F,30 °F,100 °%,VAR,1 °mph,0 °mph,29.16 °in,0.0 °in,Mist
+18,8:50 AM,30 °F,30 °F,100 °%,VAR,1 °mph,0 °mph,29.16 °in,0.0 °in,Light Snow Shower
+19,9:20 AM,30 °F,30 °F,100 °%,VAR,1 °mph,0 °mph,29.16 °in,0.0 °in,Snow Shower
+20,9:50 AM,30 °F,30 °F,100 °%,CALM,0 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+21,10:20 AM,30 °F,30 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+22,10:50 AM,32 °F,32 °F,100 °%,CALM,0 °mph,0 °mph,29.19 °in,0.0 °in,Snow Shower
+23,11:03 AM,32 °F,32 °F,100 °%,S,1 °mph,0 °mph,29.19 °in,0.0 °in,Heavy Snow Shower
+24,11:20 AM,32 °F,32 °F,100 °%,SSW,1 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+25,11:50 AM,32 °F,32 °F,100 °%,ESE,3 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+26,12:20 PM,32 °F,32 °F,100 °%,ESE,2 °mph,0 °mph,29.21 °in,0.0 °in,Snow Shower
+27,12:50 PM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+28,1:20 PM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+29,1:50 PM,34 °F,34 °F,100 °%,SSE,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+30,2:20 PM,34 °F,34 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+31,2:50 PM,34 °F,28 °F,81 °%,N,7 °mph,0 °mph,29.19 °in,0.0 °in,Light Snow Shower
+32,3:20 PM,34 °F,28 °F,81 °%,N,5 °mph,0 °mph,29.21 °in,0.0 °in,Light Snow Shower
+33,3:50 PM,34 °F,28 °F,81 °%,N,6 °mph,0 °mph,29.21 °in,0.0 °in,Light Snow Shower
+34,4:20 PM,34 °F,28 °F,81 °%,WNW,5 °mph,0 °mph,29.21 °in,0.0 °in,Light Snow Shower
+35,4:50 PM,34 °F,28 °F,81 °%,N,6 °mph,0 °mph,29.21 °in,0.0 °in,Light Snow Shower
+36,5:20 PM,34 °F,28 °F,81 °%,NNW,8 °mph,0 °mph,29.24 °in,0.0 °in,Light Snow Shower
+37,5:50 PM,32 °F,28 °F,87 °%,N,9 °mph,0 °mph,29.24 °in,0.0 °in,Light Snow Shower
+38,6:20 PM,32 °F,28 °F,87 °%,N,8 °mph,0 °mph,29.24 °in,0.0 °in,Light Snow Shower
+39,6:50 PM,32 °F,27 °F,80 °%,N,8 °mph,0 °mph,29.24 °in,0.0 °in,Light Snow Shower
+40,7:20 PM,32 °F,27 °F,80 °%,N,9 °mph,0 °mph,29.24 °in,0.0 °in,Mostly Cloudy
+41,7:50 PM,32 °F,27 °F,80 °%,N,10 °mph,0 °mph,29.24 °in,0.0 °in,Mostly Cloudy
+42,8:20 PM,32 °F,27 °F,80 °%,VAR,5 °mph,0 °mph,29.27 °in,0.0 °in,Mostly Cloudy
+43,8:50 PM,32 °F,27 °F,80 °%,SSE,3 °mph,0 °mph,29.27 °in,0.0 °in,Mostly Cloudy
+44,9:20 PM,32 °F,27 °F,80 °%,VAR,3 °mph,0 °mph,29.27 °in,0.0 °in,Light Snow Shower
+45,9:50 PM,32 °F,28 °F,87 °%,NNE,3 °mph,0 °mph,29.27 °in,0.0 °in,Mostly Cloudy
+46,10:20 PM,32 °F,28 °F,87 °%,N,5 °mph,0 °mph,29.27 °in,0.0 °in,Light Snow Shower
+47,10:50 PM,32 °F,28 °F,87 °%,VAR,1 °mph,0 °mph,29.27 °in,0.0 °in,Light Snow Shower
+48,11:20 PM,32 °F,28 °F,87 °%,NW,6 °mph,0 °mph,29.27 °in,0.0 °in,Light Snow Shower
+49,11:50 PM,30 °F,30 °F,100 °%,VAR,2 °mph,0 °mph,29.27 °in,0.0 °in,Light Snow Shower
+50,,,,,,,,,,
+51,,,,,,,,,,
+52,,,,,,,,,,
+53,,,,,,,,,,
+54,,,,,,,,,,
+55,,,,,,,,,,
+56,,,,,,,,,,
+57,,,,,,,,,,
+58,,,,,,,,,,
+59,,,,,,,,,,
