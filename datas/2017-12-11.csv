@@ -1,0 +1,65 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:20 AM,36 °F,34 °F,93 °%,WNW,6 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+1,12:50 AM,34 °F,32 °F,93 °%,NE,3 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+2,1:20 AM,34 °F,32 °F,93 °%,ESE,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+3,1:50 AM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+4,2:20 AM,34 °F,32 °F,93 °%,E,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+5,2:50 AM,34 °F,32 °F,93 °%,WSW,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+6,3:20 AM,32 °F,32 °F,100 °%,W,5 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+7,3:50 AM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+8,4:20 AM,30 °F,28 °F,93 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+9,4:50 AM,32 °F,30 °F,93 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+10,5:20 AM,28 °F,28 °F,100 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+11,5:50 AM,30 °F,30 °F,100 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+12,6:20 AM,28 °F,28 °F,100 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+13,6:50 AM,30 °F,28 °F,93 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+14,7:20 AM,28 °F,28 °F,100 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+15,7:50 AM,28 °F,28 °F,100 °%,W,3 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+16,8:20 AM,30 °F,30 °F,100 °%,WNW,5 °mph,0 °mph,29.39 °in,0.0 °in,Mist
+17,8:50 AM,32 °F,32 °F,100 °%,WNW,5 °mph,0 °mph,29.39 °in,0.0 °in,Mist
+18,9:13 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Mist
+19,9:20 AM,32 °F,32 °F,100 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Mist
+20,9:50 AM,34 °F,32 °F,93 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Mist
+21,10:03 AM,34 °F,34 °F,100 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Patches of Fog
+22,10:10 AM,36 °F,34 °F,93 °%,VAR,1 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+23,10:20 AM,36 °F,36 °F,100 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+24,10:50 AM,36 °F,36 °F,100 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+25,11:20 AM,37 °F,36 °F,93 °%,VAR,1 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+26,11:50 AM,37 °F,37 °F,100 °%,VAR,2 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+27,12:20 PM,37 °F,37 °F,100 °%,WSW,3 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+28,12:36 PM,37 °F,37 °F,100 °%,SW,3 °mph,0 °mph,29.42 °in,0.0 °in,Fog
+29,12:50 PM,39 °F,39 °F,100 °%,VAR,1 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+30,1:14 PM,41 °F,39 °F,93 °%,VAR,1 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+31,1:20 PM,41 °F,41 °F,100 °%,VAR,1 °mph,0 °mph,29.39 °in,0.0 °in,Mist
+32,1:50 PM,43 °F,41 °F,93 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Mist
+33,2:20 PM,46 °F,43 °F,87 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Partly Cloudy
+34,2:50 PM,48 °F,43 °F,82 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Partly Cloudy
+35,3:20 PM,50 °F,45 °F,82 °%,SE,3 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+36,3:50 PM,50 °F,45 °F,82 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+37,4:20 PM,50 °F,45 °F,82 °%,CALM,0 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+38,4:50 PM,48 °F,45 °F,87 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+39,5:20 PM,46 °F,45 °F,93 °%,E,5 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+40,5:50 PM,45 °F,43 °F,93 °%,ESE,3 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+41,6:20 PM,43 °F,43 °F,100 °%,E,3 °mph,0 °mph,29.36 °in,0.0 °in,Fair
+42,6:40 PM,41 °F,41 °F,100 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Patches of Fog
+43,6:50 PM,39 °F,39 °F,100 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Patches of Fog
+44,7:20 PM,37 °F,37 °F,100 °%,NNW,2 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+45,7:50 PM,39 °F,37 °F,93 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+46,8:20 PM,36 °F,36 °F,100 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Fog
+47,8:50 PM,36 °F,34 °F,93 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Fog
+48,9:20 PM,36 °F,34 °F,93 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+49,9:50 PM,34 °F,34 °F,100 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+50,10:20 PM,34 °F,34 °F,100 °%,E,2 °mph,0 °mph,29.36 °in,0.0 °in,Fog
+51,10:50 PM,32 °F,32 °F,100 °%,VAR,1 °mph,0 °mph,29.36 °in,0.0 °in,Fog
+52,11:20 PM,32 °F,32 °F,100 °%,N,3 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+53,11:50 PM,32 °F,32 °F,100 °%,VAR,1 °mph,0 °mph,29.39 °in,0.0 °in,Fog
+54,,,,,,,,,,
+55,,,,,,,,,,
+56,,,,,,,,,,
+57,,,,,,,,,,
+58,,,,,,,,,,
+59,,,,,,,,,,
+60,,,,,,,,,,
+61,,,,,,,,,,
+62,,,,,,,,,,
+63,,,,,,,,,,

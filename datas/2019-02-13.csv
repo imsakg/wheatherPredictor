@@ -1,0 +1,59 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,12:20 AM,46 °F,46 °F,100 °%,NNW,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+1,12:50 AM,46 °F,46 °F,100 °%,NW,2 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+2,1:20 AM,46 °F,46 °F,100 °%,N,2 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+3,1:50 AM,46 °F,46 °F,100 °%,N,3 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+4,2:20 AM,46 °F,46 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+5,2:50 AM,46 °F,46 °F,100 °%,NE,3 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+6,3:20 AM,45 °F,45 °F,100 °%,VAR,2 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+7,3:50 AM,46 °F,46 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+8,4:20 AM,45 °F,45 °F,100 °%,VAR,2 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+9,4:50 AM,45 °F,45 °F,100 °%,W,6 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+10,5:20 AM,45 °F,45 °F,100 °%,W,8 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+11,5:50 AM,45 °F,45 °F,100 °%,NNW,6 °mph,0 °mph,29.19 °in,0.0 °in,Light Rain Shower
+12,6:20 AM,43 °F,43 °F,100 °%,NNW,5 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+13,6:50 AM,43 °F,41 °F,93 °%,N,10 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+14,7:20 AM,43 °F,39 °F,87 °%,N,8 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+15,7:50 AM,41 °F,41 °F,100 °%,N,12 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+16,8:20 AM,41 °F,41 °F,100 °%,VAR,1 °mph,0 °mph,29.21 °in,0.0 °in,Light Rain Shower
+17,8:50 AM,41 °F,41 °F,100 °%,VAR,1 °mph,0 °mph,29.24 °in,0.0 °in,Light Rain Shower
+18,9:20 AM,41 °F,39 °F,93 °%,NNW,3 °mph,0 °mph,29.24 °in,0.0 °in,Light Rain Shower
+19,9:50 AM,41 °F,41 °F,100 °%,VAR,2 °mph,0 °mph,29.24 °in,0.0 °in,Light Rain Shower
+20,10:20 AM,41 °F,39 °F,93 °%,NNW,5 °mph,0 °mph,29.24 °in,0.0 °in,Light Rain Shower
+21,10:50 AM,41 °F,41 °F,100 °%,N,8 °mph,0 °mph,29.27 °in,0.0 °in,Mostly Cloudy
+22,11:20 AM,41 °F,39 °F,93 °%,N,9 °mph,0 °mph,29.24 °in,0.0 °in,Mostly Cloudy
+23,11:50 AM,39 °F,39 °F,100 °%,N,8 °mph,0 °mph,29.27 °in,0.0 °in,Mostly Cloudy
+24,12:20 PM,41 °F,39 °F,93 °%,N,7 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+25,12:50 PM,41 °F,39 °F,93 °%,NNE,7 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+26,1:20 PM,41 °F,39 °F,93 °%,N,6 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+27,1:50 PM,41 °F,39 °F,93 °%,N,6 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+28,2:20 PM,41 °F,41 °F,100 °%,NNE,5 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+29,2:50 PM,41 °F,39 °F,93 °%,N,3 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+30,3:20 PM,41 °F,39 °F,93 °%,N,5 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+31,3:50 PM,41 °F,39 °F,93 °%,NNW,3 °mph,0 °mph,29.27 °in,0.0 °in,Light Rain Shower
+32,4:20 PM,41 °F,39 °F,93 °%,N,5 °mph,0 °mph,29.30 °in,0.0 °in,Light Rain Shower
+33,4:50 PM,41 °F,41 °F,100 °%,VAR,2 °mph,0 °mph,29.30 °in,0.0 °in,Mostly Cloudy
+34,5:20 PM,39 °F,39 °F,100 °%,NNW,2 °mph,0 °mph,29.30 °in,0.0 °in,Light Rain Shower
+35,5:50 PM,39 °F,39 °F,100 °%,VAR,2 °mph,0 °mph,29.30 °in,0.0 °in,Light Rain Shower
+36,6:20 PM,39 °F,39 °F,100 °%,NNW,3 °mph,0 °mph,29.33 °in,0.0 °in,Light Rain Shower
+37,6:50 PM,39 °F,39 °F,100 °%,VAR,2 °mph,0 °mph,29.33 °in,0.0 °in,Light Rain Shower
+38,7:20 PM,39 °F,39 °F,100 °%,SSW,3 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+39,7:50 PM,39 °F,39 °F,100 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+40,8:20 PM,39 °F,39 °F,100 °%,SSW,3 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+41,8:50 PM,41 °F,41 °F,100 °%,SSW,3 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+42,9:20 PM,39 °F,39 °F,100 °%,S,3 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+43,9:50 PM,39 °F,39 °F,100 °%,VAR,2 °mph,0 °mph,29.36 °in,0.0 °in,Light Rain Shower
+44,10:20 PM,39 °F,39 °F,100 °%,SW,3 °mph,0 °mph,29.39 °in,0.0 °in,Light Rain Shower
+45,10:50 PM,39 °F,39 °F,100 °%,VAR,2 °mph,0 °mph,29.39 °in,0.0 °in,Light Rain Shower
+46,11:20 PM,39 °F,39 °F,100 °%,WSW,3 °mph,0 °mph,29.39 °in,0.0 °in,Light Rain Shower
+47,11:50 PM,41 °F,41 °F,100 °%,WNW,3 °mph,0 °mph,29.39 °in,0.0 °in,Light Rain Shower
+48,,,,,,,,,,
+49,,,,,,,,,,
+50,,,,,,,,,,
+51,,,,,,,,,,
+52,,,,,,,,,,
+53,,,,,,,,,,
+54,,,,,,,,,,
+55,,,,,,,,,,
+56,,,,,,,,,,
+57,,,,,,,,,,
