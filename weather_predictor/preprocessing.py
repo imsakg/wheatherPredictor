@@ -27,3 +27,24 @@ def hourly_mean(observations):
                 values[name] = sum(data) if name == "precipitation" else mean(data)
         result.append(Observation(stamp, **values))
     return result
+
+
+def interpolate_short_gaps(values, max_gap=2):
+    """Linearly fill bounded scalar gaps; use only within a training partition."""
+    if not isinstance(max_gap,int) or max_gap < 0:
+        raise ValueError("max_gap must be a nonnegative integer")
+    result = list(values)
+    i = 0
+    while i < len(result):
+        if result[i] is not None:
+            i += 1
+            continue
+        start = i
+        while i < len(result) and result[i] is None:
+            i += 1
+        length = i-start
+        if start > 0 and i < len(result) and length <= max_gap:
+            left, right = result[start-1], result[i]
+            for offset in range(length):
+                result[start+offset] = left + (right-left)*(offset+1)/(length+1)
+    return result
