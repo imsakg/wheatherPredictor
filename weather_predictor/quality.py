@@ -17,3 +17,22 @@ def quality_report(observations, step=timedelta(hours=1)):
         "irregular_intervals": sum(gap % step != timedelta(0) for gap in gaps),
         "missing": {name: sum(getattr(item,name) is None for item in rows) for name in COLUMNS[2:]},
     }
+
+
+def outlier_indices(values, window=3, threshold=3.0):
+    """Centered Hampel-style diagnostic, not a causal online filter."""
+    import math
+    from statistics import median
+    from .units import finite
+    threshold = finite(threshold)
+    if not isinstance(window,int) or window < 1 or threshold <= 0:
+        raise ValueError("window and threshold must be positive")
+    data = [finite(value) for value in values]
+    result = []
+    for i, value in enumerate(data):
+        local = data[max(0,i-window):i+window+1]
+        center = median(local)
+        scale = 1.4826 * median(abs(v-center) for v in local)
+        if abs(value-center) > threshold*max(scale, 1e-12):
+            result.append(i)
+    return result
