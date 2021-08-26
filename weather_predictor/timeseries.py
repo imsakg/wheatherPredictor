@@ -35,3 +35,16 @@ class StandardScaler:
         if not hasattr(self,"mean"):
             raise ValueError("scaler is not fitted")
         return [finite(v)*self.scale+self.mean for v in values]
+
+
+def lag_windows(values, width, horizon=1):
+    """Ordered supervised windows: labels begin strictly after every input."""
+    from .units import finite
+    if any(not isinstance(v,int) or v < 1 for v in (width,horizon)):
+        raise ValueError("width and horizon must be positive integers")
+    data = [finite(v) for v in values]
+    if len(data) < width+horizon:
+        raise ValueError("not enough samples for one complete window")
+    starts = range(len(data)-width-horizon+1)
+    return ([data[i:i+width] for i in starts],
+            [data[i+width:i+width+horizon] for i in starts])
