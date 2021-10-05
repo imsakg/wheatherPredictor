@@ -26,3 +26,19 @@ class Persistence(ForecastModel):
     def predict(self, horizon):
         self._check(horizon)
         return [self.history[-1]]*horizon
+
+
+class SeasonalNaive(ForecastModel):
+    def __init__(self, period=24):
+        if not isinstance(period,int) or period < 1:
+            raise ValueError("period must be a positive integer")
+        self.period = period
+
+    def fit(self, values):
+        self.history = _series(values,self.period)
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        season = self.history[-self.period:]
+        return [season[i % self.period] for i in range(horizon)]
