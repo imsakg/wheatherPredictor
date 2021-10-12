@@ -42,3 +42,19 @@ class SeasonalNaive(ForecastModel):
         self._check(horizon)
         season = self.history[-self.period:]
         return [season[i % self.period] for i in range(horizon)]
+
+
+class MovingAverage(SeasonalNaive):
+    """Recursive forecast of the recent sample mean, not an ARIMA MA term."""
+    def __init__(self, window=6):
+        super().__init__(window)
+        self.window = window
+
+    def predict(self, horizon):
+        self._check(horizon)
+        buffer = self.history[-self.window:]
+        predictions = []
+        for _ in range(horizon):
+            predictions.append(mean(buffer[-self.window:]))
+            buffer.append(predictions[-1])
+        return predictions
