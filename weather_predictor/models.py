@@ -58,3 +58,21 @@ class MovingAverage(SeasonalNaive):
             predictions.append(mean(buffer[-self.window:]))
             buffer.append(predictions[-1])
         return predictions
+
+
+class ExponentialSmoothing(ForecastModel):
+    def __init__(self, alpha=0.3):
+        self.alpha = finite(alpha)
+        if not 0 < self.alpha <= 1:
+            raise ValueError("alpha must be in (0,1]")
+
+    def fit(self, values):
+        self.history = _series(values)
+        self.level = self.history[0]
+        for value in self.history[1:]:
+            self.level = self.alpha*value + (1-self.alpha)*self.level
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        return [self.level]*horizon
