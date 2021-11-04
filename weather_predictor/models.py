@@ -76,3 +76,31 @@ class ExponentialSmoothing(ForecastModel):
     def predict(self, horizon):
         self._check(horizon)
         return [self.level]*horizon
+
+
+class HoltTrend(ExponentialSmoothing):
+    """Holt's level and damped additive trend."""
+    def __init__(self, alpha=0.3, beta=0.1, phi=0.98):
+        super().__init__(alpha)
+        self.beta, self.phi = finite(beta), finite(phi)
+        if not 0 <= self.beta <= 1 or not 0 < self.phi <= 1:
+            raise ValueError("beta must be in [0,1] and phi in (0,1]")
+
+    def fit(self, values):
+        self.history = _series(values,2)
+        self.level = self.history[0]
+        self.trend = self.history[1]-self.history[0]
+        for value in self.history[1:]:
+            previous = self.level
+            self.level = self.alpha*value + (1-self.alpha)*(self.level+self.phi*self.trend)
+            self.trend = self.beta*(self.level-previous) + (1-self.beta)*self.phi*self.trend
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        cumulative = 0.0
+        result = []
+        for h in range(1,horizon+1):
+            cumulative += self.phi**h
+            result.append(self.level+self.trend*cumulative)
+        return result
