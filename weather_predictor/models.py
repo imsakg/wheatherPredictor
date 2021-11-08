@@ -104,3 +104,17 @@ class HoltTrend(ExponentialSmoothing):
             cumulative += self.phi**h
             result.append(self.level+self.trend*cumulative)
         return result
+
+
+class LinearTrend(ForecastModel):
+    def fit(self, values):
+        self.history = _series(values,2)
+        n = len(self.history)
+        xbar, ybar = (n-1)/2, mean(self.history)
+        self.slope = sum((i-xbar)*(y-ybar) for i,y in enumerate(self.history))/sum((i-xbar)**2 for i in range(n))
+        self.intercept = ybar-self.slope*xbar
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        return [self.intercept+self.slope*(len(self.history)+h) for h in range(horizon)]
