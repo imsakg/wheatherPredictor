@@ -118,3 +118,56 @@ class LinearTrend(ForecastModel):
     def predict(self, horizon):
         self._check(horizon)
         return [self.intercept+self.slope*(len(self.history)+h) for h in range(horizon)]
+
+
+def _solve(matrix, vector):
+    """Gaussian elimination with partial pivoting for small dense ridge systems."""
+    rows = [list(row)+[value] for row,value in zip(matrix,vector)]
+    n = len(vector)
+    for column in range(n):
+        pivot = max(range(column,n),key=lambda i:abs(rows[i][column]))
+        if abs(rows[pivot][column]) < 1e-12:
+            raise ValueError("singular fit; increase ridge or collect more data")
+        rows[column], rows[pivot] = rows[pivot], rows[column]
+        divisor = rows[column][column]
+        rows[column] = [value/divisor for value in rows[column]]
+        for i in range(n):
+            if i != column:
+                multiplier = rows[i][column]
+                rows[i] = [a-multiplier*b for a,b in zip(rows[i],rows[column])]
+    return [row[-1] for row in rows]
+
+
+class AutoRegression(ForecastModel):
+    """Standardized ridge AR(p), intercept unpenalized; recursive multi-step output."""
+    def __init__(self, lags=6, ridge=1e-4):
+        if not isinstance(lags,int) or lags < 1:
+            raise ValueError("lags must be a positive integer")
+        self.lags, self.ridge = lags, finite(ridge)
+        if self.ridge <= 0:
+            raise ValueError("ridge must be positive")
+
+    def fit(self, values):
+        import math
+        self.history = _series(values,self.lags+2)
+        self.center = mean(self.history)
+        self.scale = math.sqrt(mean((v-self.center)**2 for v in self.history)) or 1.0
+        data = [(v-self.center)/self.scale for v in self.history]
+        x = [[1.0]+[data[i-j-1] for j in range(self.lags)] for i in range(self.lags,len(data))]
+        y = data[self.lags:]
+        size = self.lags+1
+        gram = [[sum(row[a]*row[b] for row in x)+(self.ridge if a==b and a>0 else 0)
+                 for b in range(size)] for a in range(size)]
+        rhs = [sum(row[a]*target for row,target in zip(x,y)) for a in range(size)]
+        self.coefficients = _solve(gram,rhs)
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        buffer = [(v-self.center)/self.scale for v in self.history[-self.lags:]]
+        output = []
+        for _ in range(horizon):
+            value = self.coefficients[0]+sum(c*buffer[-j-1] for j,c in enumerate(self.coefficients[1:]))
+            buffer.append(finite(value))
+            output.append(finite(value*self.scale+self.center))
+        return output
