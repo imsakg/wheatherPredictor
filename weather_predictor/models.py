@@ -171,3 +171,22 @@ class AutoRegression(ForecastModel):
             buffer.append(finite(value))
             output.append(finite(value*self.scale+self.center))
         return output
+
+
+class DifferencedAR(AutoRegression):
+    """AR on first differences, integrated back into the observed units."""
+    def fit(self, values):
+        data = _series(values,self.lags+3)
+        self.last_value = data[-1]
+        super().fit([b-a for a,b in zip(data,data[1:])])
+        self.original_history = data
+        return self
+
+    def predict(self, horizon):
+        changes = super().predict(horizon)
+        level = self.last_value
+        output = []
+        for change in changes:
+            level = finite(level+change)
+            output.append(level)
+        return output
