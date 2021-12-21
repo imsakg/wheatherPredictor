@@ -190,3 +190,26 @@ class DifferencedAR(AutoRegression):
             level = finite(level+change)
             output.append(level)
         return output
+
+
+class WeightedEnsemble(ForecastModel):
+    """Factory-based averaging; weights must be chosen before the final test set."""
+    def __init__(self, factories, weights=None):
+        self.factories = list(factories)
+        self.weights = [finite(v) for v in weights] if weights is not None else [1.0]*len(self.factories)
+        if not self.factories or len(self.factories) != len(self.weights) or any(v < 0 for v in self.weights) or sum(self.weights) <= 0:
+            raise ValueError("nonnegative weights must match a nonempty model list and sum to > 0")
+        total = sum(self.weights)
+        self.weights = [weight/total for weight in self.weights]
+
+    def fit(self, values):
+        self.history = _series(values)
+        self.members = [factory().fit(self.history) for factory in self.factories]
+        return self
+
+    def predict(self, horizon):
+        self._check(horizon)
+        outputs = [model.predict(horizon) for model in self.members]
+        if any(len(output) != horizon for output in outputs):
+            raise ValueError("ensemble member returned the wrong forecast length")
+        return [finite(sum(weight*output[h] for weight,output in zip(self.weights,outputs))) for h in range(horizon)]
