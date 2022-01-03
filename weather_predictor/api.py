@@ -43,3 +43,17 @@ class OpenWeatherClient:
 
     def current(self, latitude, longitude):
         return parse_current(self._request("weather",latitude,longitude))
+
+
+    def forecast(self, latitude, longitude):
+        """Provider's 3-hour forecasts, not locally trained predictions or observed truth."""
+        payload = self._request("forecast",latitude,longitude)
+        if not isinstance(payload,dict) or str(payload.get("cod")) != "200" or not isinstance(payload.get("list"),list):
+            raise ValueError("invalid provider forecast payload")
+        result = []
+        for item in payload["list"]:
+            copied = dict(item)
+            if "rain" in copied:
+                copied["rain"] = {"1h":copied["rain"].get("3h")}
+            result.append(parse_current(copied))
+        return sorted(result,key=lambda row:row.timestamp)
