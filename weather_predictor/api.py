@@ -30,7 +30,8 @@ class OpenWeatherClient:
         self.api_key = os.environ.get("OPENWEATHER_API_KEY","") if api_key is None else api_key
         if not self.api_key or not self.api_key.strip():
             raise ValueError("set OPENWEATHER_API_KEY or supply an API key")
-        self.transport = transport
+        from .http import JsonTransport
+        self.transport = transport if transport is not None else JsonTransport()
 
     def _request(self, endpoint, latitude, longitude):
         lat, lon = finite(latitude), finite(longitude)
