@@ -11,5 +11,8 @@ requires-python = ">=3.9"
 license = {text = "MIT"}
 dependencies = []
 
+[project.scripts]
+weather-predictor = "weather_predictor.cli:main"
+
 [tool.setuptools.packages.find]
 include = ["weather_predictor*"]
