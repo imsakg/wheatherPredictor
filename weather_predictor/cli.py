@@ -20,6 +20,11 @@ def build_parser():
     inspect = commands.add_parser("inspect",help="report canonical CSV data quality")
     inspect.add_argument("csv")
     inspect.set_defaults(handler=inspect_data)
+    from .forecast import MODEL_NAMES
+    forecast = commands.add_parser("forecast",help="forecast temperature from canonical CSV")
+    add_model_arguments(forecast,MODEL_NAMES)
+    forecast.add_argument("--horizon",type=int,default=6)
+    forecast.set_defaults(handler=forecast_data)
     return parser
 
 
@@ -32,3 +37,21 @@ def main(argv=None):
         return 0
     except (OSError,ValueError,RuntimeError) as exc:
         parser.error(str(exc))
+
+
+def add_model_arguments(parser, names):
+    parser.add_argument("csv")
+    parser.add_argument("--model",choices=names,default="persistence")
+    parser.add_argument("--period",type=int,default=24)
+    parser.add_argument("--window",type=int,default=6)
+    parser.add_argument("--lags",type=int,default=6)
+
+
+def selected_model(args):
+    from .forecast import make_model
+    return make_model(args.model,period=args.period,window=args.window,lags=args.lags)
+
+
+def forecast_data(args):
+    from .forecast import forecast_observations
+    return forecast_observations(load_observations(args.csv),selected_model(args),args.horizon)
