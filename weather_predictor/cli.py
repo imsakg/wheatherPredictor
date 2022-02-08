@@ -25,6 +25,12 @@ def build_parser():
     add_model_arguments(forecast,MODEL_NAMES)
     forecast.add_argument("--horizon",type=int,default=6)
     forecast.set_defaults(handler=forecast_data)
+    backtest = commands.add_parser("backtest",help="rolling-origin forecast evaluation")
+    add_model_arguments(backtest,MODEL_NAMES)
+    backtest.add_argument("--min-train",type=int,default=48)
+    backtest.add_argument("--horizon",type=int,default=6)
+    backtest.add_argument("--step",type=int,default=6)
+    backtest.set_defaults(handler=backtest_data)
     return parser
 
 
@@ -55,3 +61,10 @@ def selected_model(args):
 def forecast_data(args):
     from .forecast import forecast_observations
     return forecast_observations(load_observations(args.csv),selected_model(args),args.horizon)
+
+
+def backtest_data(args):
+    from .backtest import rolling_backtest
+    rows = load_observations(args.csv)
+    return rolling_backtest([row.temperature for row in rows],lambda:selected_model(args),
+                            args.min_train,args.horizon,args.step)
