@@ -31,6 +31,11 @@ def build_parser():
     backtest.add_argument("--horizon",type=int,default=6)
     backtest.add_argument("--step",type=int,default=6)
     backtest.set_defaults(handler=backtest_data)
+    collect = commands.add_parser("collect",help="append current API observation to one-station CSV cache")
+    collect.add_argument("--lat",type=float,required=True)
+    collect.add_argument("--lon",type=float,required=True)
+    collect.add_argument("--output",required=True)
+    collect.set_defaults(handler=collect_current)
     return parser
 
 
@@ -68,3 +73,11 @@ def backtest_data(args):
     rows = load_observations(args.csv)
     return rolling_backtest([row.temperature for row in rows],lambda:selected_model(args),
                             args.min_train,args.horizon,args.step)
+
+
+def collect_current(args):
+    from .api import OpenWeatherClient
+    from .collection import save_csv_cache
+    item = OpenWeatherClient().current(args.lat,args.lon)
+    count = save_csv_cache(args.output,[item],conflict="last")
+    return {"count":count,"latest":item.timestamp.isoformat(),"path":args.output}
