@@ -24,6 +24,7 @@ def build_parser():
     forecast = commands.add_parser("forecast",help="forecast temperature from canonical CSV")
     add_model_arguments(forecast,MODEL_NAMES)
     forecast.add_argument("--horizon",type=int,default=6)
+    forecast.add_argument("--output",help="optional forecast CSV path")
     forecast.set_defaults(handler=forecast_data)
     backtest = commands.add_parser("backtest",help="rolling-origin forecast evaluation")
     add_model_arguments(backtest,MODEL_NAMES)
@@ -65,7 +66,12 @@ def selected_model(args):
 
 def forecast_data(args):
     from .forecast import forecast_observations
-    return forecast_observations(load_observations(args.csv),selected_model(args),args.horizon)
+    result = forecast_observations(load_observations(args.csv),selected_model(args),args.horizon)
+    if args.output:
+        from .export import write_forecast
+        with open(args.output,"w",encoding="utf-8",newline="") as stream:
+            write_forecast(result,stream)
+    return result
 
 
 def backtest_data(args):
