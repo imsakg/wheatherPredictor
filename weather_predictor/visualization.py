@@ -40,3 +40,22 @@ def line_chart(series, title="Weather series", width=800, height=360):
         svg.append('<text x="{}" y="{}" fill="{}" font-size="12">{}</text>'.format(62+i*140,height-10,color,escape(name)))
     svg.append('<text x="62" y="{}" font-size="12">sample index: 0 to {}</text></svg>'.format(height-30,length-1))
     return ''.join(svg)
+
+
+def forecast_chart(history, predicted, intervals=None):
+    history, predicted = list(history), list(predicted)
+    if not history or not predicted:
+        raise ValueError("history and predicted must be nonempty")
+    gap = [None]*(len(history)-1)
+    series = {"observed":history+[None]*len(predicted),
+              "forecast":gap+[history[-1]]+predicted}
+    if intervals is not None:
+        intervals = list(intervals)
+        if len(intervals) != len(predicted):
+            raise ValueError("intervals must match predicted length")
+        for i,(low,high) in enumerate(intervals):
+            if not finite(low) <= finite(predicted[i]) <= finite(high):
+                raise ValueError("interval must contain its prediction")
+        series["lower"] = [None]*len(history)+[item[0] for item in intervals]
+        series["upper"] = [None]*len(history)+[item[1] for item in intervals]
+    return line_chart(series,title="Temperature forecast (Celsius)")
