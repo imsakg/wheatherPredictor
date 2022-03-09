@@ -59,3 +59,11 @@ def forecast_chart(history, predicted, intervals=None):
         series["lower"] = [None]*len(history)+[item[0] for item in intervals]
         series["upper"] = [None]*len(history)+[item[1] for item in intervals]
     return line_chart(series,title="Temperature forecast (Celsius)")
+
+
+def residual_chart(actual, predicted):
+    actual, predicted = list(actual), list(predicted)
+    if not actual or len(actual) != len(predicted):
+        raise ValueError("actual and predicted must be nonempty and equally sized")
+    errors = [finite(p)-finite(a) for a,p in zip(actual,predicted)]
+    return line_chart({"error":errors,"zero":[0]*len(errors)},title="Forecast error (predicted - actual)")
