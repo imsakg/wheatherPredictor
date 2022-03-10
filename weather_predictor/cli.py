@@ -37,6 +37,11 @@ def build_parser():
     collect.add_argument("--lon",type=float,required=True)
     collect.add_argument("--output",required=True)
     collect.set_defaults(handler=collect_current)
+    report = commands.add_parser("report",help="write a standalone HTML forecast report")
+    add_model_arguments(report,MODEL_NAMES)
+    report.add_argument("--horizon",type=int,default=6)
+    report.add_argument("--output",required=True)
+    report.set_defaults(handler=report_data)
     return parser
 
 
@@ -87,3 +92,13 @@ def collect_current(args):
     item = OpenWeatherClient().current(args.lat,args.lon)
     count = save_csv_cache(args.output,[item],conflict="last")
     return {"count":count,"latest":item.timestamp.isoformat(),"path":args.output}
+
+
+def report_data(args):
+    from .forecast import forecast_observations
+    from .report import forecast_report
+    rows = load_observations(args.csv)
+    predicted = forecast_observations(rows,selected_model(args),args.horizon)
+    with open(args.output,"w",encoding="utf-8") as stream:
+        stream.write(forecast_report(rows,predicted))
+    return {"path":args.output,"horizon":len(predicted),"model":args.model}
