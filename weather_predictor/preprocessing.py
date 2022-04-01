@@ -48,3 +48,22 @@ def interpolate_short_gaps(values, max_gap=2):
             for offset in range(length):
                 result[start+offset] = left + (right-left)*(offset+1)/(length+1)
     return result
+
+
+def daily_summary(observations, timezone_name="UTC"):
+    """Daily summaries; rain is an observed subtotal, not an inferred complete total."""
+    from zoneinfo import ZoneInfo
+    from .collection import merge_observations
+    zone = ZoneInfo(timezone_name)
+    groups = defaultdict(list)
+    for row in merge_observations(observations):
+        groups[row.timestamp.astimezone(zone).date()].append(row)
+    result = []
+    for day,rows in sorted(groups.items()):
+        temperature = [row.temperature for row in rows]
+        rain = [row.precipitation for row in rows if row.precipitation is not None]
+        result.append({"date":day.isoformat(),"timezone":timezone_name,"count":len(rows),
+                       "temperature_min":min(temperature),"temperature_max":max(temperature),
+                       "temperature_mean":mean(temperature),"precipitation_samples":len(rain),
+                       "precipitation_total":sum(rain) if rain else None})
+    return result
