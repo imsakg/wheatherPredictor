@@ -3,7 +3,12 @@ import math
 
 
 def finite(value):
-    value = float(value)
+    try:
+        if isinstance(value,bool):
+            raise ValueError("measurement cannot be boolean")
+        value = float(value)
+    except (TypeError,ValueError,OverflowError) as exc:
+        raise ValueError("measurement must be numeric and finite") from exc
     if not math.isfinite(value):
         raise ValueError("measurement must be finite")
     return value

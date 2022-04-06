@@ -16,10 +16,13 @@ class Observation:
     precipitation: Optional[float] = None
 
     def __post_init__(self):
+        if not isinstance(self.timestamp,datetime):
+            raise ValueError("timestamp must be a datetime")
         if self.timestamp.tzinfo is None or self.timestamp.utcoffset() is None:
             raise ValueError("timestamp must include a timezone")
         object.__setattr__(self, "timestamp", self.timestamp.astimezone(timezone.utc))
-        for name in ("temperature", "humidity", "pressure", "wind_speed", "wind_direction", "precipitation"):
+        object.__setattr__(self,"temperature",finite(self.temperature))
+        for name in ("humidity", "pressure", "wind_speed", "wind_direction", "precipitation"):
             value = getattr(self, name)
             if value is not None:
                 object.__setattr__(self, name, finite(value))

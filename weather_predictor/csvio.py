@@ -11,9 +11,13 @@ def read_csv(stream):
     reader = csv.DictReader(stream)
     if not {"timestamp", "temperature"}.issubset(reader.fieldnames or []):
         raise ValueError("CSV requires timestamp and temperature columns")
+    if len(reader.fieldnames) != len(set(reader.fieldnames)):
+        raise ValueError("duplicate CSV columns")
     result = []
     for row in reader:
         try:
+            if None in row or not row.get("timestamp"):
+                raise ValueError("row has extra cells or missing timestamp")
             values = {name: float(row[name]) if row.get(name) not in (None, "") else None
                       for name in COLUMNS[1:]}
             if values["temperature"] is None:
