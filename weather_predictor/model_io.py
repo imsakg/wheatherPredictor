@@ -20,12 +20,17 @@ def dump_model(model, stream):
 
 def load_model(stream):
     try:
-        payload = json.load(stream)
+        text = stream.read(2000001)
+        if len(text) > 2000000:
+            raise ValueError("model document exceeds 2 MB limit")
+        payload = json.loads(text)
+        if not isinstance(payload,dict):
+            raise ValueError("model document must be an object")
         name = payload["model"]
         if payload["version"] != 1 or name not in _PARAMETERS:
             raise ValueError("unsupported model format")
         params, training = payload["parameters"], payload["training"]
-        if set(params) != set(_PARAMETERS[name]) or not isinstance(training,list) or len(training)>1000000:
+        if set(params) != set(_PARAMETERS[name]) or not isinstance(training,list) or len(training)>20000:
             raise ValueError("invalid model parameters or training data")
         return getattr(models,name)(**params).fit(training)
     except (KeyError, TypeError, json.JSONDecodeError, OverflowError) as exc:

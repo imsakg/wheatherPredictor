@@ -141,15 +141,18 @@ def _solve(matrix, vector):
 class AutoRegression(ForecastModel):
     """Standardized ridge AR(p), intercept unpenalized; recursive multi-step output."""
     def __init__(self, lags=6, ridge=1e-4):
-        if not isinstance(lags,int) or lags < 1:
-            raise ValueError("lags must be a positive integer")
+        if not isinstance(lags,int) or isinstance(lags,bool) or not 1 <= lags <= 128:
+            raise ValueError("lags must be an integer in [1,128]")
         self.lags, self.ridge = lags, finite(ridge)
         if self.ridge <= 0:
             raise ValueError("ridge must be positive")
 
     def fit(self, values):
         import math
-        self.history = _series(values,self.lags+2)
+        data = _series(values,self.lags+2)
+        if len(data)*(self.lags+1)**2 > 20000000:
+            raise ValueError("AR fitting workload exceeds the small-system limit")
+        self.history = data
         self.center = mean(self.history)
         self.scale = math.sqrt(mean((v-self.center)**2 for v in self.history)) or 1.0
         data = [(v-self.center)/self.scale for v in self.history]
