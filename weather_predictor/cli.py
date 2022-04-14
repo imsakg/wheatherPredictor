@@ -81,7 +81,8 @@ def forecast_data(args):
 
 def backtest_data(args):
     from .backtest import rolling_backtest
-    rows = load_observations(args.csv)
+    from .forecast import regular_observations
+    rows,_ = regular_observations(load_observations(args.csv))
     return rolling_backtest([row.temperature for row in rows],lambda:selected_model(args),
                             args.min_train,args.horizon,args.step)
 
