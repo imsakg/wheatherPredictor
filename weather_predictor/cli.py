@@ -74,8 +74,12 @@ def forecast_data(args):
     result = forecast_observations(load_observations(args.csv),selected_model(args),args.horizon)
     if args.output:
         from .export import write_forecast
-        with open(args.output,"w",encoding="utf-8",newline="") as stream:
-            write_forecast(result,stream)
+        import io
+        from .output import check_output_path, atomic_text
+        check_output_path(args.csv,args.output)
+        stream = io.StringIO()
+        write_forecast(result,stream)
+        atomic_text(args.output,stream.getvalue())
     return result
 
 
@@ -100,6 +104,7 @@ def report_data(args):
     from .report import forecast_report
     rows = load_observations(args.csv)
     predicted = forecast_observations(rows,selected_model(args),args.horizon)
-    with open(args.output,"w",encoding="utf-8") as stream:
-        stream.write(forecast_report(rows,predicted))
+    from .output import check_output_path, atomic_text
+    check_output_path(args.csv,args.output)
+    atomic_text(args.output,forecast_report(rows,predicted))
     return {"path":args.output,"horizon":len(predicted),"model":args.model}
