@@ -42,6 +42,12 @@ def build_parser():
     report.add_argument("--horizon",type=int,default=6)
     report.add_argument("--output",required=True)
     report.set_defaults(handler=report_data)
+    importer = commands.add_parser("import-daily",help="normalize original daily station CSVs")
+    importer.add_argument("files",nargs="+")
+    importer.add_argument("--timezone",required=True,help="IANA timezone of station local clocks")
+    importer.add_argument("--output",required=True)
+    importer.add_argument("--hourly",action="store_true",help="aggregate to UTC hourly bins")
+    importer.set_defaults(handler=import_daily_data)
     return parser
 
 
@@ -108,3 +114,29 @@ def report_data(args):
     check_output_path(args.csv,args.output)
     atomic_text(args.output,forecast_report(rows,predicted))
     return {"path":args.output,"horizon":len(predicted),"model":args.model}
+
+
+def import_daily_data(args):
+    import io
+    from datetime import date
+    from pathlib import Path
+    from .legacy import read_daily
+    from .collection import merge_observations
+    from .preprocessing import hourly_mean
+    from .csvio import write_csv
+    from .output import check_output_path, atomic_text
+    rows = []
+    for name in args.files:
+        check_output_path(name,args.output)
+        try:
+            day = date.fromisoformat(Path(name).stem)
+        except ValueError:
+            raise ValueError("daily filenames must be YYYY-MM-DD.csv") from None
+        with open(name,encoding="utf-8",newline="") as stream:
+            rows = merge_observations(rows,read_daily(stream,day,args.timezone))
+    if args.hourly:
+        rows = hourly_mean(rows)
+    stream = io.StringIO()
+    write_csv(rows,stream)
+    atomic_text(args.output,stream.getvalue())
+    return {"count":len(rows),"path":args.output}

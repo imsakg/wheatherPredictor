@@ -26,10 +26,16 @@ def number(value):
 
 
 def read_daily(stream, day, timezone_name):
-    zone = ZoneInfo(timezone_name)
+    try:
+        zone = ZoneInfo(timezone_name)
+    except KeyError:
+        raise ValueError("unknown station timezone") from None
     result = []
     reader = csv.DictReader(stream)
     for row in reader:
+        # Original scraper emitted indexed padding rows with every measurement empty.
+        if all(not row.get(name) for name in ("Time","Temperature","Humidity","Wind","Wind Speed","Pressure","Precip.","Condition")):
+            continue
         try:
             clock = datetime.strptime(row["Time"].strip(), "%I:%M %p").time()
             stamp = datetime.combine(day, clock, tzinfo=zone)
