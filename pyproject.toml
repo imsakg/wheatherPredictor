@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "0.2.0"
 description = "Small, reproducible station-weather forecasting tools"
 readme = "README.md"
 requires-python = ">=3.9"
-license = {text = "MIT"}
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 dependencies = []
 
 [project.scripts]

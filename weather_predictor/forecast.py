@@ -30,6 +30,11 @@ def regular_observations(observations, step=None):
 
 def forecast_observations(observations, model, horizon=6, step=None):
     rows,step = regular_observations(observations,step)
-    predictions = model.fit([row.temperature for row in rows]).predict(horizon)
+    from .units import finite
+    if not isinstance(horizon,int) or isinstance(horizon,bool) or horizon < 1:
+        raise ValueError("horizon must be a positive integer")
+    predictions = [finite(v) for v in model.fit([row.temperature for row in rows]).predict(horizon)]
+    if len(predictions) != horizon:
+        raise ValueError("model returned the wrong forecast length")
     return [{"timestamp":(rows[-1].timestamp+step*(i+1)).isoformat(),"temperature":value}
             for i,value in enumerate(predictions)]

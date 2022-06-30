@@ -8,7 +8,8 @@ def autocorrelation(values, max_lag=24):
     data = _series(values)
     if not isinstance(max_lag,int) or not 0 <= max_lag < len(data):
         raise ValueError("max_lag must be nonnegative and shorter than the series")
-    centered = [value-mean(data) for value in data]
+    center = mean(data)
+    centered = [value-center for value in data]
     denominator = sum(value*value for value in centered)
     return [1.0]+[sum(a*b for a,b in zip(centered[:-lag],centered[lag:]))/denominator
                   if denominator else 0.0 for lag in range(1,max_lag+1)]

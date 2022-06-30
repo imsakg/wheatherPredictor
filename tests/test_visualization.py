@@ -5,6 +5,7 @@ from weather_predictor.visualization import line_chart
 class VisualizationTests(unittest.TestCase):
     def test_valid_svg_and_escaped_labels(self):
         text=line_chart({'A < B':[1,2,None,4],'constant':[3]*4},title='<script>alert(1)</script>')
+        # Generated local SVG only; external XML is never loaded.
         root=ET.fromstring(text)
         self.assertTrue(root.tag.endswith('svg'))
         self.assertNotIn('<script>',text)

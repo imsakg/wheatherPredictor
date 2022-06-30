@@ -25,11 +25,15 @@ def heat_index(temperature, humidity):
     temperature, humidity = finite(temperature), finite(humidity)
     if not 0 <= humidity <= 100:
         raise ValueError("humidity must be in [0,100]")
-    if temperature < 26.7 or humidity < 40:
-        return temperature
     t, r = celsius_to_fahrenheit(temperature), humidity
-    index = (-42.379+2.04901523*t+10.14333127*r-0.22475541*t*r-0.00683783*t*t
-             -0.05481717*r*r+0.00122874*t*t*r+0.00085282*t*r*r-0.00000199*t*t*r*r)
+    index = (0.5*(t+61+(t-68)*1.2+r*0.094)+t)/2
+    if index >= 80:
+        index = (-42.379+2.04901523*t+10.14333127*r-0.22475541*t*r-0.00683783*t*t
+                 -0.05481717*r*r+0.00122874*t*t*r+0.00085282*t*r*r-0.00000199*t*t*r*r)
+        if r < 13 and 80 <= t <= 112:
+            index -= (13-r)/4*math.sqrt((17-abs(t-95))/17)
+        elif r > 85 and 80 <= t <= 87:
+            index += (r-85)/10*(87-t)/5
     return fahrenheit_to_celsius(index)
 
 

@@ -1,7 +1,7 @@
 """Read original Wunderground daily files, correcting the old sliced-number parser."""
 import csv
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from .schema import Observation
 from .units import fahrenheit_to_celsius, mph_to_ms, inhg_to_hpa, inches_to_mm
@@ -38,7 +38,12 @@ def read_daily(stream, day, timezone_name):
             continue
         try:
             clock = datetime.strptime(row["Time"].strip(), "%I:%M %p").time()
-            stamp = datetime.combine(day, clock, tzinfo=zone)
+            naive = datetime.combine(day,clock)
+            stamp = naive.replace(tzinfo=zone)
+            if stamp.astimezone(timezone.utc).astimezone(zone).replace(tzinfo=None) != naive:
+                raise ValueError("nonexistent station local clock; resolve offset explicitly")
+            if stamp.utcoffset() != naive.replace(tzinfo=zone,fold=1).utcoffset():
+                raise ValueError("ambiguous station local clock; resolve offset explicitly")
             rain = row.get("Precip.", "")
             result.append(Observation(
                 stamp, fahrenheit_to_celsius(number(row["Temperature"])),

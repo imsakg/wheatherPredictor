@@ -1,0 +1,5 @@
+include README.md HISTORY.md LICENSE
+include predictor.py parser.py scraper.py
+recursive-include docs *.md
+recursive-include examples *.py
+include datas/2021-03-25.csv

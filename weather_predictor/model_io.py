@@ -27,7 +27,7 @@ def load_model(stream):
         if not isinstance(payload,dict):
             raise ValueError("model document must be an object")
         name = payload["model"]
-        if payload["version"] != 1 or name not in _PARAMETERS:
+        if type(payload["version"]) is not int or payload["version"] != 1 or name not in _PARAMETERS:
             raise ValueError("unsupported model format")
         params, training = payload["parameters"], payload["training"]
         if set(params) != set(_PARAMETERS[name]) or not isinstance(training,list) or len(training)>20000:

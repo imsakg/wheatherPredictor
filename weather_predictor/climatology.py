@@ -1,6 +1,7 @@
 """Monthly UTC temperature climatology, fitted only on supplied history."""
 from collections import defaultdict
 from statistics import mean
+from datetime import datetime, timezone
 
 
 class MonthlyClimatology:
@@ -18,4 +19,9 @@ class MonthlyClimatology:
     def predict(self, timestamps):
         if not hasattr(self,"months"):
             raise ValueError("climatology is not fitted")
-        return [self.months.get(stamp.month,self.fallback) for stamp in timestamps]
+        output = []
+        for stamp in timestamps:
+            if not isinstance(stamp,datetime) or stamp.tzinfo is None or stamp.utcoffset() is None:
+                raise ValueError("climatology query timestamps must be timezone-aware")
+            output.append(self.months.get(stamp.astimezone(timezone.utc).month,self.fallback))
+        return output
